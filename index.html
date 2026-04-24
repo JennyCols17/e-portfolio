@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
 </head>
 <body>
 
@@ -51,7 +51,13 @@
 
         <div class="profile-grid">
           <div class="profile-photo">
-            <div class="photo-placeholder">
+            <img
+              class="profile-photo__img"
+              src="profpic.jpg"
+              alt="Photo of Jenny Mae A. Colo"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+            />
+            <div class="photo-placeholder" style="display:none;">
               <span>Your Photo</span>
             </div>
             <div class="profile-card">
@@ -180,34 +186,30 @@
 
           <div class="deliverable-card">
             <div class="deliverable-card__number">D1</div>
-            <h3 class="deliverable-card__title">[Deliverable Title — e.g., Weekly Progress Reports]</h3>
-            <p class="deliverable-card__desc">[Describe this deliverable. What was it? How did you produce it? What was its purpose within the project?]</p>
-            <p class="deliverable-card__impact"><strong>Impact:</strong> [Explain how this deliverable contributed to the project's success or the organization's goals.]</p>
-            <a href="#" class="deliverable-card__link">View Sample &rarr;</a>
+            <h3 class="deliverable-card__title">Official Company Website (New Build)</h3>
+            <p class="deliverable-card__desc">A rebuilt website developed from the ground up using Node.js and Firebase to replace the previously compromised site. I produced the core pages, structure, and content flow to present the company professionally and support customer access to information.</p>
+            <p class="deliverable-card__impact"><strong>Impact:</strong> Restored the company’s online presence with a clean, modern platform that improved visibility and credibility.</p>
           </div>
 
           <div class="deliverable-card">
             <div class="deliverable-card__number">D2</div>
-            <h3 class="deliverable-card__title">[Deliverable Title — e.g., System Documentation]</h3>
-            <p class="deliverable-card__desc">[Describe this deliverable. What was it? How did you produce it? What was its purpose within the project?]</p>
-            <p class="deliverable-card__impact"><strong>Impact:</strong> [Explain how this deliverable contributed to the project's success or the organization's goals.]</p>
-            <a href="#" class="deliverable-card__link">View Sample &rarr;</a>
+            <h3 class="deliverable-card__title">Security Setup (Rules, Auth, and Safe Configuration)</h3>
+            <p class="deliverable-card__desc">A security-first setup for the new website. I implemented Firebase Security Rules, added JWT authentication for protected actions, and used environment variables to keep sensitive values out of the codebase. I also applied input sanitization and CORS controls in the backend.</p>
+            <p class="deliverable-card__impact"><strong>Impact:</strong> Reduced the risk of unauthorized access and helped prevent the same type of breach from happening again.</p>
           </div>
 
           <div class="deliverable-card">
             <div class="deliverable-card__number">D3</div>
-            <h3 class="deliverable-card__title">[Deliverable Title — e.g., UI/UX Prototype]</h3>
-            <p class="deliverable-card__desc">[Describe this deliverable. What was it? How did you produce it? What was its purpose within the project?]</p>
-            <p class="deliverable-card__impact"><strong>Impact:</strong> [Explain how this deliverable contributed to the project's success or the organization's goals.]</p>
-            <a href="#" class="deliverable-card__link">View Sample &rarr;</a>
+            <h3 class="deliverable-card__title">Responsive UI/UX Layout</h3>
+            <p class="deliverable-card__desc">A mobile-friendly, responsive front-end layout with clear navigation and consistent typography. I designed the structure to keep key information readable and easy to find across devices.</p>
+            <p class="deliverable-card__impact"><strong>Impact:</strong> Improved user experience for customers and stakeholders, making the site easier to browse on phones and desktops.</p>
           </div>
 
           <div class="deliverable-card">
             <div class="deliverable-card__number">D4</div>
-            <h3 class="deliverable-card__title">[Deliverable Title — e.g., Presentation to Stakeholders]</h3>
-            <p class="deliverable-card__desc">[Describe this deliverable. What was it? How did you produce it? What was its purpose within the project?]</p>
-            <p class="deliverable-card__impact"><strong>Impact:</strong> [Explain how this deliverable contributed to the project's success or the organization's goals.]</p>
-            <a href="#" class="deliverable-card__link">View Sample &rarr;</a>
+            <h3 class="deliverable-card__title">Daily Encoding &amp; Document Processing Output</h3>
+            <p class="deliverable-card__desc">Accurate encoding of orders and systematic processing of paperwork as part of the Encoding Department’s workflow. I ensured entries matched source documents and supported the “ending of orders” process through careful verification.</p>
+            <p class="deliverable-card__impact"><strong>Impact:</strong> Helped maintain operational accuracy, reduced avoidable errors, and supported smoother day-to-day transaction finalization.</p>
           </div>
 
         </div>
@@ -329,30 +331,30 @@
           <div class="solution-block">
             <div class="solution-block__marker"></div>
             <div class="solution-block__content">
-              <h3>[Solution / Contribution Title — e.g., Database Optimization]</h3>
-              <p><strong>Challenge:</strong> [Describe the problem or challenge the company was facing that your academic background helped address.]</p>
-              <p><strong>Solution:</strong> [Explain the solution or idea you proposed/implemented, drawing from your BSIT coursework or knowledge.]</p>
-              <p><strong>Integration:</strong> [Describe how the solution was adopted or integrated into the company's workflow or operations.]</p>
+              <h3>Security Hardening &amp; Access Control (Firebase + JWT)</h3>
+              <p><strong>Challenge:</strong> The company previously experienced a security breach, which highlighted risks such as unauthorized access, weak request validation, and the potential exposure of internal records.</p>
+              <p><strong>Solution:</strong> Using my BSIT background in cybersecurity concepts and web development, I implemented layered protection: Firebase Security Rules for controlled access, JWT-based authentication for protected actions, environment variables to keep sensitive keys out of the codebase, and backend input sanitization + CORS policy to reduce common web attack vectors.</p>
+              <p><strong>Integration:</strong> These controls were applied directly to the Node.js backend and Firebase configuration, then tested using real workflow scenarios (normal user vs. restricted access). The result was a safer foundation that supported daily operations without exposing internal data.</p>
             </div>
           </div>
 
           <div class="solution-block">
             <div class="solution-block__marker"></div>
             <div class="solution-block__content">
-              <h3>[Solution / Contribution Title — e.g., Automated Report Generation]</h3>
-              <p><strong>Challenge:</strong> [Describe the problem or challenge the company was facing.]</p>
-              <p><strong>Solution:</strong> [Explain the solution you implemented based on your academic knowledge.]</p>
-              <p><strong>Integration:</strong> [Describe how it was integrated into the company's operations.]</p>
+              <h3>Encoding Accuracy &amp; Documentation Workflow (Process Improvement)</h3>
+              <p><strong>Challenge:</strong> The Encoding Department handled a high volume of orders and paperwork daily. With repetitive manual encoding, small mistakes (wrong item, quantity, spelling, or missing details) could cause delays and extra back-and-forth during order finalization.</p>
+              <p><strong>Solution:</strong> Using my BSIT training in systems thinking and quality control, I introduced a consistent personal workflow: a quick checklist for required fields, a standardized format for order references, and a verification step by cross-checking encoded details against the source documents before marking an order as complete.</p>
+              <p><strong>Integration:</strong> This approach was applied in my daily encoding tasks and document processing. It improved consistency in how orders were encoded and helped reduce rework during reviews, especially on busy days with many transactions.</p>
             </div>
           </div>
 
           <div class="solution-block">
             <div class="solution-block__marker"></div>
             <div class="solution-block__content">
-              <h3>[Solution / Contribution Title — e.g., UI/UX Improvement Proposal]</h3>
-              <p><strong>Challenge:</strong> [Describe the problem.]</p>
-              <p><strong>Solution:</strong> [Describe your contribution.]</p>
-              <p><strong>Integration:</strong> [Describe how it was used.]</p>
+              <h3>Responsive Website UI/UX (Professional Digital Presence)</h3>
+              <p><strong>Challenge:</strong> The company needed a modern, professional website that could be accessed easily on mobile devices and still look clean and trustworthy for customers and stakeholders.</p>
+              <p><strong>Solution:</strong> I used UI/UX principles from my coursework to design a clear information structure, consistent typography, and responsive layout behavior. I improved navigation and readability so key sections could be found quickly, supporting both usability and credibility.</p>
+              <p><strong>Integration:</strong> The UI/UX improvements were implemented directly in the final website build and aligned with real user needs (quick access to information, easy navigation, and consistent design). This helped strengthen the company’s online visibility and made the site easier to maintain.</p>
             </div>
           </div>
         </div>
@@ -370,7 +372,7 @@
         <div class="reflection-grid">
           <div class="reflection-block">
             <h3 class="reflection-block__title">Challenges &amp; Successes</h3>
-            <p>My biggest challenge was rebuilding the company’s website following a security breach while managing high-volume order encoding. I initially struggled to balance the urgent development of a secure **Node.js** backend with the high-pressure demand for data accuracy, but I overcame this by implementing a systematic workflow and **Firebase** security middleware. My greatest success was delivering a platform that not only restored the company’s digital presence but also streamlined the "ending of orders" process. By automating manual tasks and hardening system security, I provided a meaningful contribution that significantly improved the department’s daily operational efficiency and data integrity.</p>
+            <p>My biggest challenge was rebuilding the company’s website following a security breach while managing high-volume order encoding. I initially struggled to balance the urgent development of a secure Node.js backend with the high-pressure demand for data accuracy, but I overcame this by implementing a systematic workflow and Firebase security middleware. My greatest success was delivering a platform that not only restored the company’s digital presence but also streamlined the "ending of orders" process. By automating manual tasks and hardening system security, I provided a meaningful contribution that significantly improved the department’s daily operational efficiency and data integrity.</p>
           </div>
 
           <div class="reflection-block">
@@ -402,10 +404,10 @@
     <div class="footer__center">JMC</div>
     <div class="footer__right">
       <p><a href="mailto:mjmcolo@tip.edu.ph">mjmcolo@tip.edu.ph</a></p>
-      <p>OJT E-Portfolio &nbsp;·&nbsp; 2025</p>
+      <p>OJT E-Portfolio &nbsp;·&nbsp; 2026</p>
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
